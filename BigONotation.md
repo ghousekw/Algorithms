@@ -41,13 +41,13 @@ Iske different rating terms hy code ko define karte jaise,
 ---
 ## Big O(n):
 
-![Sample demonstration of BigO](BigOSample.png)
+![Sample demonstration of BigO](./images/BigOSample.png)
 
 - Manlo ek problem ke do solutions hy aur **Solution A me 10 operations** lage, aur **Solution B ko 5 operations** lage run hone me, tho hum bolsakte hy **Solution B is better than Solution A**. Kyunki number of operations on solution B is less than solution A.
 
 - Isse hum time complexity ko calculate karsaktin, kitne number of operations me hum apna algorithm run sakte hyn.
 
-![Big O Chart](BigOChart.png)
+![Big O Chart](./images/BigOChart.png)
 
 - **O(n)** jab operations me **Loops(for, while, etc.,)** rehtin use hum O(n) se denote kartin.
 
@@ -318,6 +318,6 @@ all_cubes(items)
 
 ## Summary:
 
-![Big0 Summary](Big0Summary1.png)
+![Big0 Summary](./images/Big0Summary1.png)
 
-![Big0 Summary](Big0Summary2.png)
+![Big0 Summary](./images/Big0Summary2.png)
