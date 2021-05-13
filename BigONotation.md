@@ -113,7 +113,7 @@ displayStudent(student_list)
 
 ## Counting Operations:
 
-* yeh par ek example leh kar analyze karenge kaise hum Big0(n) aur Big0(1) kaise hum operations ko calculate kar sakte hyn.
+* yahan par ek example leh kar analyze karenge Big0(n) aur Big0(1) ko calculate kar sakte hyn.
 
 ```python
 # agar yeh wai line ke baare me baat kare tho, iska time complexity hoga Big0(1), kyunki idar sirf assigning kar rahe hy
