@@ -315,3 +315,9 @@ all_cubes(items)
 # example 2 me hum empty list le kar har bar append karte hyn, joh ki har baar extra space use hota hyn.
 
 ```
+
+## Summary:
+
+![Big0 Summary](Big0Summary1.png)
+
+![Big0 Summary](Big0Summary2.png)
