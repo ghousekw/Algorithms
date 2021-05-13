@@ -239,4 +239,11 @@ print("Total number of operations performed is", randomFunction(num_list))
 # Time Complexity is 
 # 0(1+1+n+n^2+n^2) => 0(2+n+2n^2) => 0(n+ 2n^2) => 0(n^2)
 ```
+---
+## Big0(n!):
 
+* matlab har ek input element ko nested loop add karna, joh ki na mumkin ke jaisa hy
+* Aur isye cases apko rare or impossible, dekhne ko milega.
+
+---
+ 
