@@ -37,3 +37,51 @@ Iske different rating terms hy code ko define karte jaise,
 - Kitne **number of steps** me hum apna program run karsakte hy uss par **Big O** adarith rehta hy.
 
 - Sidi si baat, Big O humko ek algorithm run hone me kitne time lagta hy woh answer deta hy.
+
+Big O(n):
+--
+
+![Sample demonstration of BigO](BigOSample.png)
+
+- Manlo ek problem ke do solutions hy aur **Solution A me 10 operations** lage, aur **Solution B ko 5 operations** lage run hone me, tho hum bolsakte hy **Solution B is better than Solution A**. Kyunki number of operations on solution B is less than solution A.
+
+- Isse hum time complexity ko calculate karsaktin, kitne number of operations me hum apna algorithm run sakte hyn.
+
+![Big O Chart](BigOChart.png)
+
+- **O(n)** jab operations me **Loops(for, while, etc.,)** rehtin use hum O(n) se denote kartin.
+
+- **O(1)** , jab operations me constants rehtin use O(1) se denote kartin.
+
+- X-Axis **Elements(Number of inputs)** jaise variable assignments and so.
+
+- Y-Axis **Operations** bole tho number of operations jaise loops,condtions kitne baar run hua ho waise.
+
+```Python
+
+student_list1 = ["Raees", "Irfan", "Naseer"]
+
+student_list2 = ["Irshad", "Sardar", "Rizwan", "Yunus"]
+
+# idar student_list1 se ek input lete hy aur comparison opertion perform karte hyn aur usse **for loop** me rak kar daurate rehte hyn jabtak apna desired output se match nahi hota(isko hum operations bi bolte hyn)
+
+# yeh function totally dependent hy number of input par, jaise 2 input milne par 2 operations, 3 milne par 3 operations waise.,
+def checkStudent(student_list1):
+    for student in student_list1:
+        if student == "Naseer":
+            print(student)
+
+# isse hum bolsakte hy hum 4 inputs diye hy aur 4 operations perform hua hy
+
+# agar hum pattern dekho tho linear(straight) path bolsakte hyn.
+
+checkStudent(student_list1)
+
+# agar hum yeh problem ka conclusion bole tho, yeh problem follows linear(straight) path, so it is Big0(n)
+
+# Here 'n' is the number of elements we have 
+```
+
+* Big0 yeh ek common pattern jo har problem me dekhne ko milega mostly.
+
+### Agar number of inputs = number of operations, tab yeh follow karta hy linear path, so the complexity is Big0(n).
