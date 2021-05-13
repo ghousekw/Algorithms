@@ -28,8 +28,12 @@ Iske different rating terms hy code ko define karte jaise,
 
 ## Why do we need  Big O?
 
-- idar hum ek udaharan dekhenge, kyun hum calculate nahi karenge time ko minute yaan seconds me.
+- idar hum ek udaharan dekhenge, kyun hum calculate nahi karenge **time ko minute yaan seconds me**.
 
 - har system ka alag configurataions rehti usse hamko alag alag execution time milta.
 
 - Iske liye hum execution time/system time par dependent ny rehte, aur yahi karan hy Big O notation use karne ki wajah.
+
+- Kitne **number of steps** me hum apna program run karsakte hy uss par **Big O** adarith rehta hy.
+
+- Sidi si baat, Big O humko ek algorithm run hone me kitne time lagta hy woh answer deta hy.
