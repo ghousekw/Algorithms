@@ -135,10 +135,108 @@ def randomFunction(colleagues):
 print(randomFunction(colleagues))
 # agar hum pura time complexity calculate kare tho 0(1+1+1+1+1+1+n+n) => 0(6+2n) => 0(n)
 
+```
+---
+## Simplifying Big 0:
+
+* Hum upar ke example me dekhe 0(6+2n), waise hi dusre examples me 0(n+2n+5+n^2), 0(n^2+2n+6n) aur wagaira, wagaira...
+
+* Tho humko samaj na hoga ise kaise simplify kare. Aur isse simplify karne ke liye 5 rules hy.
+
+## Simplifying Big0(n^2):
+
+* 0(n^2) isko quadratic equation kehte hyn.
+* Jaise hamare pass 2 elements(input) hy 4 operations, 3 elements 9 operations wagaira, wagaira... isko hum 0(n^2) se denote karte hyn.
+
+```python
+
+num_list = [1,2,3,4,5,6,7,8,9] #0(1)
+
+def randomFunction(num_list):
+
+    totalCount = 0; #time complexity is 0(1)
+
+    for num1 in num_list: #time complexity is 0(n^2)
+        for num2 in num_list: #time complexity is 0(n^2)
+            print(num1, num2)
+            totalCount+=1
+    return totalCount
+
+print("Total number of operations performed is", randomFunction(num_list))
+
+# Time complexity is 0(1+1+n^2+n^2) => 0(2+2n^2) => 0(n)
+# As we have 9 elements here, so it will 81 operations.
+# output: Total number of operations performed is 81
 
 ```
+## 1. Rule: Focus on Scalabilty:
+    * yahan per hamare inputs millions yaan infinity ke aur rahna chahiye. Manlo hum kaam kar rahe jaise ek big application yaan website me, tho usme millions of input rehtin.
+    * Tho yahan dhyan yeh rakhna chahiye number of inputs jiyada ho aur number of operations kam ho.
+ 
+## 2. Rule: Considering worst case scenario:
+
+```python
+students = ["raees","rafi","irfan","zain"]
+
+def checkStudent(student_list):
+    for student in students:
+        if student == 'rafi':
+# yahan par hala ki humko pata hy ki yeh 2nd position me hy, phir bi hum worst case scenario samaj te hy, jaise hamara input phele bi hosakta hy yaan phir aakhir bi hosakta hy.
+# isliye isko Big0(n) kehte hyn.
+            print('available')
+
+checkStudent(students)
+```
+## 3. Rule 3: Remove all possible constants
+    * (6+2n) => 0(n), isme hum constant 6 nikal denge kyunki hum inputs(n) millions me consider kare rahe hy, isliye small number millions ke samne chota hy.
+    * Even app 0(2n) raha tho bi 0(n) hi consider karenge,
+    usme kuch constant raha simple nikal denge.
+
+## 4. Consider different variable for different inputs:
+    
+```python
+
+# yahan par hamare pass different variable hy aur usme different inputs store karta hyn.
+
+num_list = [1,2,3,4,5,6,7,8,9] #0(1)
+char_list = [a,b,c,d,e,f,g] #0(1)
+
+def randomFunction(num_list, char_list):
+    for num in num_list: #time complexity is 0(n)
+        print(num)
+    
+    for char in char_list: #time complexity is 0(m)
+        print(char)
+
+randomFunction(num_list, char_list) 
+#time complexity is 0(n + m)
+
+```
+## 5. Remove all non-dominants:
+
+* Agar apko time complexity calculate karne ke baad apko isa output mila 0(n+n^2), tho yahan 'n' remove kardiya jayega, kyunki n^2 is bigger than n. 
 
 
+```python
 
+num_list = [1,2,3,4,5,6,7,8,9] #0(1)
 
+def randomFunction(num_list):
+
+    totalCount = 0; #time complexity is 0(1)
+    
+    for num in num_list: #time complexity is 0(n)
+        print(num)
+    
+    for num1 in num_list: #time complexity is 0(n^2)
+        for num2 in num_list: #time complexity is 0(n^2)
+            print(num1, num2)
+            totalCount+=1
+    return totalCount
+
+print("Total number of operations performed is", randomFunction(num_list))
+
+# Time Complexity is 
+# 0(1+1+n+n^2+n^2) => 0(2+n+2n^2) => 0(n+ 2n^2) => 0(n^2)
+```
 
