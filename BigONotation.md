@@ -247,3 +247,71 @@ print("Total number of operations performed is", randomFunction(num_list))
 
 ---
  
+## Space Complexity:
+
+* mane amount of space/memory ki jarurat hy ek algorithm ke life cycle me.
+
+* isme 2 rakam ke space complexity rehte hyn
+    1. jo input ko store karte hyn.
+    2. extra space joh chahiye apne program to execute hone ke liye.
+
+* in short, kitna additional memory hamko dena chahiye apne code ko run karne ke liye.
+
+```python
+# example 1:
+
+items = [1,2,3,4,5,6]
+# yeh ek input hy joh store karta hy apne items ko
+
+def display_cube(items):
+    result = pow(items[0],3) 
+    # space complexity is 0(1), kyunki idar number of operations doesnt depend on number of inputs
+
+# yeh ek additional memory space hy joh store karta hy temporary result variable ko, joh sirf execution time pe use hota hy apne result ko store karne me.
+    return result
+
+display_cube(items)
+
+```
+
+
+```python
+# example 2:
+
+items = [1,2,3,4,5,6]
+# yeh ek input hy joh store karta hy apne items ko
+
+result = []
+# empty list to joh akhir me apne result to store karta hy
+
+def all_cubes(items):
+    for item in items:
+        result.append(pow(item,3))
+    # space complexity is 0(n), kyunki yahan number of operations depend on number of inputs.
+    # Agar mere pass 6 elements(inputs) hy tho, mere pass 6 six different result hy, jo ki store karne ke liye.
+    
+    print(result)
+
+all_cubes(items)
+
+```
+
+```python
+# example 3:
+
+items = [1,2,3,4,5,6]
+# yeh ek input hy joh store karta hy apne items ko
+
+def all_cubes(items):
+    for item in items:
+        result = pow(item,3) # 0(1)
+    # space complexity is 0(1), kyunki yahan sirf ek variable(extra space) ko use karte hyn result ko store karne ke liye
+    # Har ek iteration me, result variable override karta rehta hy, isse hamko sirf ek extra space chahiye joh ki store karne ke liye.
+
+    print(result)
+
+all_cubes(items)
+
+# example 2 me hum empty list le kar har bar append karte hyn, joh ki har baar extra space use hota hyn.
+
+```
