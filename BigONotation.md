@@ -38,8 +38,8 @@ Iske different rating terms hy code ko define karte jaise,
 
 - Sidi si baat, Big O humko ek algorithm run hone me kitne time lagta hy woh answer deta hy.
 
-Big O(n):
---
+---
+## Big O(n):
 
 ![Sample demonstration of BigO](BigOSample.png)
 
@@ -67,7 +67,7 @@ student_list2 = ["Irshad", "Sardar", "Rizwan", "Yunus"]
 
 # yeh function totally dependent hy number of input par, jaise 2 input milne par 2 operations, 3 milne par 3 operations waise.,
 def checkStudent(student_list1):
-    for student in student_list1:
+    for student in student_list1: #time complexity is 0(n)
         if student == "Naseer":
             print(student)
 
@@ -85,3 +85,29 @@ checkStudent(student_list1)
 * Big0 yeh ek common pattern jo har problem me dekhne ko milega mostly.
 
 ### Agar number of inputs = number of operations, tab yeh follow karta hy linear path, so the complexity is Big0(n).
+---
+## Big0(1):
+
+* Big0(1) sidi baat constant hy
+
+Example code:
+```python
+student_list1 = ['areeb', 'irfan', 'raees', 'naseer']
+
+def displayStudent(student_list1):
+    print(student_list[0]) #time complexity is 0(1)
+    print(student_list[1]) #time complexity is 0(1)
+
+# halaki hamare list me 4 inputs hy lekin hum sirf ek baar operation run karenge.
+# yahan hum input par dependent ny hy, hum sirf first element ko display kara rahe hy.
+
+displayStudent(student_list)
+
+# Hum ye code se bolsakte hy, yeh run hota hy constant time me, tho yeh Big0(1).
+
+# kyun, the number of operations we are performing aur number of input we are depending is 1.
+
+# Tho number of operations nahi depend hy input par, tho yeh code execute hoga constant amount of time par.
+
+```
+
