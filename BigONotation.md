@@ -111,3 +111,34 @@ displayStudent(student_list)
 
 ```
 
+## Counting Operations:
+
+* yeh par ek example leh kar analyze karenge kaise hum Big0(n) aur Big0(1) kaise hum operations ko calculate kar sakte hyn.
+
+```python
+# agar yeh wai line ke baare me baat kare tho, iska time complexity hoga Big0(1), kyunki idar sirf assigning kar rahe hy
+colleagues = ["yaseen", "khaja", "jaseem", "ashraf","saad"] #0(1)
+
+def randomFunction(colleagues):
+    first = colleagues[0] #0(1)
+    total = 0 #0(1)
+    new_list = [] #0(1)
+
+    # agar hum loop me chalegaya tho uska time complexity Big0(n) hoga, kyunki idar hum number of inputs lekar number of operations perform karenge.
+    for colleague in colleagues: 
+        total+=1 #0(n), kyunki yeh inputs per depend hy
+        new_list.append(colleague) #0(n)
+    
+    print(new_list) #0(1)
+    return total #0(1)
+
+print(randomFunction(colleagues))
+# agar hum pura time complexity calculate kare tho 0(1+1+1+1+1+1+n+n) => 0(6+2n) => 0(n)
+
+
+```
+
+
+
+
+
