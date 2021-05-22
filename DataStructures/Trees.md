@@ -59,3 +59,62 @@
 
 * Agar edges calculate kare tho
     - Number of nodes - 1(root node)
+
+# Binary Tree:
+
+* Binary tree me har child jiyada tak 2 childs rak sakta hy. Bole tho ek child 2 se jiyada yaan phir 2 se kum nahi rakh sakta binary tree me.
+
+![Binary Tree representation](../images/BinaryTree.png)
+
+* The below one is **`not a binary tree.`**
+
+![Binary Tree dont have 3 nodes](../images/BinaryTreeNot.png)
+
+* Binary Tree me har element node ke form me store hota.
+* Isme **`data.left, data, data.right`** rehtin, har ek node me.
+
+![Binary Tree in Memory](../images/BinaryTreeMemoryRep.png)
+
+* Types of Binary Tree:
+    1. **`Full Binary Tree`**
+    2. **`Complete Binary Tree`**
+    3. **`Perfect BinaryTree`**
+    4. **`Balanced BinaryTree`**
+    5. **`Degenarate BinaryTree`**
+
+## 1. Full BinaryTree:
+
+* Isme har **`node me 0 or 2 children rehtin`**.
+
+![Full BinaryTree representation ](../images/FullBinaryTree.png)
+
+## 2. Complete BinaryTree:
+
+* Isme har levels me equally *`nodes fill hoko rehtin`*, sirf *`last level chodke`*, aur last node jo hy woh *`left aligned rahenge.`* yaan phir complete rehte hyn.
+
+
+![Complete BinaryTree representation ](../images/CompleteBinaryTree.png)
+
+## 3. Perfect BinaryTree:
+
+* Isme kya hy, sab nodes me 2 children rehtin aur sab leaf nodes jo hy woh ek hi depth yaan same level me rehtin.
+
+![Perfect BinaryTree representation ](../images/PerfectBinaryTree.png)
+
+
+## 4. Balanced BinaryTree:
+
+* Isme hum har node ko individually dekhnge, aur *`difference dekhenge left node height aur right node height`* se, agar *`difference sirf 1 or 0 raha tho ok`*, ny tho it is not a balanced binary tree.
+
+* Simple se boln bole tho *`yeh hieght of left & right subtrees ke upar depend rehta hy.`*
+
+![Balanced BinaryTree representation ](../images/BalancedBinaryTree.png)
+
+
+## 5. Degenerate BinaryTree:
+
+* Isme kya bole *`har node ku sirf ek child rehta.`*
+
+
+![Degenarate BinaryTree representation ](../images/DegenarateBinaryTree.png)
+
