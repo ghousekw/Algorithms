@@ -44,8 +44,45 @@
     ```
 - Edge depends on logn.
 
+## BST Search:
+
 ![BinarySearchTree Complexity calculation ](../images/BSTElementFind.png)
 
 - Agar mere ku kuch 35 element ko dekhna ho tho phele root element se compare karunga, agar less than root hy tho left side ke elements yaan phir greater than raha right side ke elements me jaunga. Jaane ke baad ignore karunga jo bi side elements ko.
 
 - Iska complexity hoga log(7) ~ 3.
+
+![BinarySearchTree balanced search Complexity calculation ](../images/BSTBalancedSearch.png)
+
+![BinarySearchTree unbalanced search Complexity calculation ](../images/BSTUnbalancedSearch.png)
+
+## BST Insert:
+
+![BinarySearchTree balanced insert Complexity calculation ](../images/BSTInsertBalanced.png)
+
+![BinarySearchTree balanced insert Complexity calculation ](../images/BSTInsertMemory.png)
+
+![BinarySearchTree unbalanced insert Complexity calculation ](../images/BSTInsertUnbalanced.png)
+
+## BST Delete:
+
+![BinarySearchTree balanced delete Complexity calculation ](../images/BSTDeleteMemory.png)
+
+![BinarySearchTree balanced delete Complexity calculation for 1 child](../images/BSTDeleteBalanced.png)
+
+![BinarySearchTree balanced delete Complexity cases](../images/BSTDeleteComplexities.png)
+
+### Problems when we keep on adding elements:
+
+* Firstly, hamara tree jo hy unbalanced ke isme chalejata.
+
+![BinarySearchTree problems when keep on adding elements](../images/BSTProblems.png)
+
+## AVL Trees Versus Red Black Trees:
+
+* yeh apko help karenge tree ko balance rakhne me.
+
+* AVL trees me agar difference 2 se jiyada ho root element se tab balancing karega.
+
+- [RedBlackTreesVisulization Link](https://www.cs.usfca.edu/~galles/visualization/RedBlack.html)
+- [AVL trees visulization](https://visualgo.net/en/bst)
